@@ -3,7 +3,9 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
+<div class="final">
   <nav>
     <div class="logo">LOGO</div>
     <div class="hamburger">
@@ -17,8 +19,8 @@
         <li class="menu-head">LOGO</li>
         <a href="#"><li>Shirts</li></a>
         <a href="#"><li>Dresses</li></a>
-        <a href="#"><li>Jeans</a>
-          <ul class="sublist">
+        <a href="#" onclick="change()"><li>Jeans</a>
+          <ul class="sublist" id="subL">
             <li><a href="#">Skinny</a></li>
             <li><a href="#">Relaxed</a></li>
             <li><a href="#">Bootcut</a></li>
@@ -31,9 +33,9 @@
       <a href="#"><li>Shoes</li></a>
       <li>
         <ul class="footer-list">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Newsletter</a></li>
-            <li><a href="#">Subscribe</a></li>
+          <a href="#"><li>Contact</li></a>
+          <a href="#"><li>Newsletter</li></a>
+          <a href="#"><li>Subscribe</li></a>
         </ul>
       </li>
     </ul>
@@ -41,7 +43,11 @@
   <div class="rest-body">
   <div class="row">
   <div class="jeans"> Jeans</div>
-  <div><img src="img/rep1.png" class="rep" ></div>
+  <div class="top-buttons">
+    <!-- <img src="img/rep1.png" class="rep" > -->
+    <input type="image" src="img/cart1.png" name="submit" width="55" height="55" alt="submit"/>  
+    <input type="image" src="img/search.png" name="submit" width="50" height="50" alt="submit"/> 
+  </div>
   </div>
   <div class="mid">
   <div class="row1">
@@ -50,44 +56,48 @@
     <div class="text2">COLLECTION 2016</div>
     <button class="b1">SHOP NOW</button>
   </div>
+
+  <div class="row-item">
+    8 items
+  </div> 
   
     <div class="item">
-        <img src="img/jeans1.jpg" class="img-div">
+        <img src="img/jeans11.jpg" class="img-div">
         <div>Ripped skinny Jeans</div>
         <div>$19.99</div>
     </div>
     <div class="item">
-        <img src="img/jeans2.jpg" class="img-div">
+        <img src="img/jeans2 (1).jpg" class="img-div">
         <div>Mega Ripped Jeans</div>
         <div>$24.99</div>
     </div>
     <div class="item">
-        <img src="img/jeans3.jpg" class="img-div">
+        <img src="img/jeans3 (1).jpg" class="img-div">
         <div>Washed skinny Jeans</div>
         <div>$20.99</div>
     </div>
     <div class="item">
-        <img src="img/jeans4.jpg" class="img-div">
+        <img src="img/jeans4 (1).jpg" class="img-div">
         <div>Vintage skinny Jeans</div>
         <div>$14.99</div>
     </div>
     <div class="item">
-        <img src="img/jeans4.jpg" class="img-div">
+        <img src="img/jeans4 (1).jpg" class="img-div">
         <div>Vintage skinny Jeans</div>
         <div>$14.99</div>
     </div>
     <div class="item">
-        <img src="img/jeans3.jpg" class="img-div">
+        <img src="img/jeans3 (1).jpg" class="img-div">
         <div>Washed skinny Jeans</div>
         <div>$20.99</div>
     </div>
     <div class="item">
-        <img src="img/jeans2.jpg" class="img-div">
+        <img src="img/jeans2 (1).jpg" class="img-div">
         <div>Mega Ripped Jeans</div>
         <div>$24.99</div>
     </div>
     <div class="item">
-        <img src="img/jeans1.jpg" class="img-div">
+        <img src="img/jeans11.jpg" class="img-div">
         <div>Ripped skinny Jeans</div>
         <div>$19.99</div>
     </div>
@@ -136,5 +146,7 @@
   </div>
 </div>
   <script src="script.js"></script>
+</div>  
+</body>  
 </body>
 </html>
